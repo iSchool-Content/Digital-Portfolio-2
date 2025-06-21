@@ -1,13 +1,3 @@
-:root {
-  --text-color: #1a1c20;
-  --text-color-light: #4a4a4a;
-  --link-color: #4a76ee;
-  --background-color: #eeeff1;
-  --Blue-color: #0073f7;
-  --oragne-color: #ff7a1b;
-  --yellow-color: #ffd600;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -20,15 +10,17 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  max-width: 1400px;
-  margin: 0 auto;
+  color: #1a1c20;
+  background-color: #eeeff1;
 }
 
 a {
-  color: var(--link-color);
+  color: #4a76ee;
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 nav {
@@ -39,15 +31,16 @@ nav {
   height: 80px;
 }
 
-nav .left a {
-  color: var(--oragne-color);
-  font-size: 22px;
-  font-weight: 600;
+nav .right ul {
+  display: flex;
+  gap: 20px;
 }
 
-nav .right a {
-  color: var(--text-color);
-  margin: 0 10px;
+nav .right ul li a {
+  color: #1a1c20;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .hero-section {
@@ -65,7 +58,7 @@ nav .right a {
 }
 
 .hero-section .text h2 span {
-  color: var(--Blue-color);
+  color: #0073f7;
   margin: 20px 0;
 }
 
@@ -137,7 +130,7 @@ nav .right a {
 .projects-section .text {
   text-align: center;
   margin-bottom: 30px;
-  color: var(--text-color-light);
+  color: #4a4a4a;
 }
 
 .project-cards {
@@ -168,6 +161,6 @@ nav .right a {
 
 .card p {
   font-size: 14px;
-  color: var(--text-color-light);
+  color: #4a4a4a;
   margin-bottom: 15px;
 }
