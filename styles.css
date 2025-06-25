@@ -15,7 +15,6 @@ body {
 }
 
 a {
-  color: #4a76ee;
   text-decoration: none;
 }
 
@@ -23,12 +22,19 @@ li {
   list-style: none;
 }
 
+/* Start Nav */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
   height: 80px;
+}
+
+nav .left a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ff7a00;
 }
 
 nav .right ul {
@@ -38,18 +44,15 @@ nav .right ul {
 
 nav .right ul li a {
   color: #1a1c20;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
 }
 
+/* Start Hero Section */
 .hero-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
-  margin: 50px 0;
-  margin-bottom: 100px;
+  margin: 50px 0 100px;
   gap: 40px;
 }
 
@@ -62,16 +65,23 @@ nav .right ul li a {
   margin: 20px 0;
 }
 
-.hero-section .headshot {
+.hero-section .avatar {
   display: flex;
   justify-content: right;
 }
 
-.hero-section .headshot img {
+.hero-section .avatar img {
   width: 350px;
-  border-radius: 50%;
 }
 
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Skills Section */
 .skills-section {
   padding: 0 50px;
   margin-bottom: 100px;
@@ -116,6 +126,7 @@ nav .right ul li a {
   font-weight: bold;
 }
 
+/* Projects Section */
 .projects-section {
   padding: 0 50px;
   margin-bottom: 100px;
